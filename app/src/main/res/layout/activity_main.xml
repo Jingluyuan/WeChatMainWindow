@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:loo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_bg"
+        >
+
+        <com.wechat.mainwindow.ChangeColorWithText
+            android:id="@+id/indicator_message"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            loo:icon="@mipmap/ic_menu_message"
+            loo:color="#ff45c01a"
+            loo:text_size="12sp"
+            loo:text="@string/tab_message"
+            android:layout_height="match_parent" />
+
+        <com.wechat.mainwindow.ChangeColorWithText
+            android:id="@+id/indicator_contect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            loo:icon="@mipmap/ic_menu_friendslist"
+            loo:color="#ff45c01a"
+            loo:text_size="12sp"
+            loo:text="@string/tab_contact"
+            android:layout_height="match_parent" />
+
+        <com.wechat.mainwindow.ChangeColorWithText
+            android:id="@+id/indicator_show"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            loo:icon="@mipmap/ic_menu_emoticons"
+            loo:color="#ff45c01a"
+            loo:text_size="12sp"
+            loo:text="@string/tab_found"
+            android:layout_height="match_parent" />
+
+        <com.wechat.mainwindow.ChangeColorWithText
+            android:id="@+id/indicator_me"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            loo:icon="@mipmap/ic_menu_myself"
+            loo:color="#ff45c01a"
+            loo:text_size="12sp"
+            loo:text="@string/tab_me"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
